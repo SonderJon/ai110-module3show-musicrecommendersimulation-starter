@@ -133,8 +133,128 @@ Because:
         User likes acoustics (True) vs Song acoustics (0.45). Match: 0.45
 ```
 
-**Screenshot or video** *(optional)*: <!-- Insert a screenshot or demo video link here -->
+User Profile: genre = edm, mood = energetic, energy = 0.9, likes acoustic = False<br>
+Listing top 5 recommendations
+```
+Top recommendations:
 
+Grid Runner - Score: 0.98
+Because: 
+        User genre (edm) vs Song genre (edm). Match: 1.00
+        User mood (energetic) vs Song mood (energetic). Match: 1.00
+        User energy: User (0.9) vs Song energy (0.95). Match: 0.95
+        User likes acoustics (False) vs Song acoustics (0.02). Match: 0.98
+
+Gym Hero - Score: 0.39
+Because: 
+        User genre (edm) vs Song genre (pop). Match: 0.00
+        User mood (energetic) vs Song mood (intense). Match: 0.00
+        User energy: User (0.9) vs Song energy (0.93). Match: 0.97
+        User likes acoustics (False) vs Song acoustics (0.05). Match: 0.95
+
+Storm Runner - Score: 0.38
+Because: 
+        User genre (edm) vs Song genre (rock). Match: 0.00
+        User mood (energetic) vs Song mood (intense). Match: 0.00
+        User energy: User (0.9) vs Song energy (0.91). Match: 0.99
+        User likes acoustics (False) vs Song acoustics (0.1). Match: 0.90
+
+Broken Circuit - Score: 0.38
+Because: 
+        User genre (edm) vs Song genre (metal). Match: 0.00
+        User mood (energetic) vs Song mood (intense). Match: 0.00
+        User energy: User (0.9) vs Song energy (0.97). Match: 0.93
+        User likes acoustics (False) vs Song acoustics (0.03). Match: 0.97
+
+Sunrise City - Score: 0.35
+Because: 
+        User genre (edm) vs Song genre (pop). Match: 0.00
+        User mood (energetic) vs Song mood (happy). Match: 0.00
+        User energy: User (0.9) vs Song energy (0.82). Match: 0.92
+        User likes acoustics (False) vs Song acoustics (0.18). Match: 0.82
+```
+
+User Profile: genre = metal, mood = intense, energy = 1.0, likes acoustic = False<br>
+Listing top 5 recommendations
+```
+Top recommendations:
+
+Broken Circuit - Score: 0.99
+Because: 
+        User genre (metal) vs Song genre (metal). Match: 1.00
+        User mood (intense) vs Song mood (intense). Match: 1.00
+        User energy: User (1.0) vs Song energy (0.97). Match: 0.97
+        User likes acoustics (False) vs Song acoustics (0.03). Match: 0.97
+
+Gym Hero - Score: 0.62
+Because: 
+        User genre (metal) vs Song genre (pop). Match: 0.00
+        User mood (intense) vs Song mood (intense). Match: 1.00
+        User energy: User (1.0) vs Song energy (0.93). Match: 0.93
+        User likes acoustics (False) vs Song acoustics (0.05). Match: 0.95
+
+Storm Runner - Score: 0.61
+Because: 
+        User genre (metal) vs Song genre (rock). Match: 0.00
+        User mood (intense) vs Song mood (intense). Match: 1.00
+        User energy: User (1.0) vs Song energy (0.91). Match: 0.91
+        User likes acoustics (False) vs Song acoustics (0.1). Match: 0.90
+
+Grid Runner - Score: 0.38
+Because: 
+        User genre (metal) vs Song genre (edm). Match: 0.00
+        User mood (intense) vs Song mood (energetic). Match: 0.00
+        User energy: User (1.0) vs Song energy (0.95). Match: 0.95
+        User likes acoustics (False) vs Song acoustics (0.02). Match: 0.98
+
+Sunrise City - Score: 0.33
+Because: 
+        User genre (metal) vs Song genre (pop). Match: 0.00
+        User mood (intense) vs Song mood (happy). Match: 0.00
+        User energy: User (1.0) vs Song energy (0.82). Match: 0.82
+        User likes acoustics (False) vs Song acoustics (0.18). Match: 0.82
+```
+
+User Profile: genre = classical, mood = intense, energy = 0.0, likes acoustic = True<br>
+Listing top 5 recommendations
+```
+Top recommendations:
+
+Paper Moons - Score: 0.95
+Because: 
+        User genre (classical) vs Song genre (classical). Match: 1.00
+        User mood (sad) vs Song mood (sad). Match: 1.00
+        User energy: User (0.0) vs Song energy (0.2). Match: 0.80
+        User likes acoustics (True) vs Song acoustics (0.97). Match: 0.97
+
+Spacewalk Thoughts - Score: 0.32
+Because: 
+        User genre (classical) vs Song genre (ambient). Match: 0.00
+        User mood (sad) vs Song mood (chill). Match: 0.00
+        User energy: User (0.0) vs Song energy (0.28). Match: 0.72
+        User likes acoustics (True) vs Song acoustics (0.92). Match: 0.92
+
+Desert Mirage - Score: 0.31
+Because: 
+        User genre (classical) vs Song genre (folk). Match: 0.00
+        User mood (sad) vs Song mood (relaxed). Match: 0.00
+        User energy: User (0.0) vs Song energy (0.31). Match: 0.69
+        User likes acoustics (True) vs Song acoustics (0.94). Match: 0.94
+
+Library Rain - Score: 0.29
+Because: 
+        User genre (classical) vs Song genre (lofi). Match: 0.00
+        User mood (sad) vs Song mood (chill). Match: 0.00
+        User energy: User (0.0) vs Song energy (0.35). Match: 0.65
+        User likes acoustics (True) vs Song acoustics (0.86). Match: 0.86
+
+Coffee Shop Stories - Score: 0.29
+Because: 
+        User genre (classical) vs Song genre (jazz). Match: 0.00
+        User mood (sad) vs Song mood (relaxed). Match: 0.00
+        User energy: User (0.0) vs Song energy (0.37). Match: 0.63
+        User likes acoustics (True) vs Song acoustics (0.89). Match: 0.89
+```
 ---
 
 ## Experiments You Tried
