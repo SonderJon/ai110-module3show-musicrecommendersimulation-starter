@@ -92,13 +92,45 @@ You can add more tests in `tests/test_recommender.py`.
 
 Paste a sample of your recommender's output here as a text block so a reader can see what it produces:
 
+User Profile: genre = pop, mood = happy, energy = 0.8, likes acoustic = True<br>
+Listing top 5 recommendations
 ```
-# e.g.:
-# User profile: genre=indie, mood=chill, energy=low
-# Recommendations:
-#   1. ...
-#   2. ...
-#   3. ...
+Top recommendations:
+
+Sunrise City - Score: 0.87
+Because: 
+        User genre (pop) vs Song genre (pop). Match: 1.00
+        User mood (happy) vs Song mood (happy). Match: 1.00
+        User energy: User (0.8) vs Song energy (0.82). Match: 0.98
+        User likes acoustics (True) vs Song acoustics (0.18). Match: 0.18
+
+Gym Hero - Score: 0.57
+Because: 
+        User genre (pop) vs Song genre (pop). Match: 1.00
+        User mood (happy) vs Song mood (intense). Match: 0.00
+        User energy: User (0.8) vs Song energy (0.93). Match: 0.87
+        User likes acoustics (True) vs Song acoustics (0.05). Match: 0.05
+
+Rooftop Lights - Score: 0.54
+Because: 
+        User genre (pop) vs Song genre (indie pop). Match: 0.00
+        User mood (happy) vs Song mood (happy). Match: 1.00
+        User energy: User (0.8) vs Song energy (0.76). Match: 0.96
+        User likes acoustics (True) vs Song acoustics (0.35). Match: 0.35
+
+Backyard Anthem - Score: 0.53
+Because:
+        User genre (pop) vs Song genre (country). Match: 0.00
+        User mood (happy) vs Song mood (happy). Match: 1.00
+        User energy: User (0.8) vs Song energy (0.7). Match: 0.90
+        User likes acoustics (True) vs Song acoustics (0.4). Match: 0.40
+
+Velvet Sway - Score: 0.51
+Because:
+        User genre (pop) vs Song genre (soul). Match: 0.00
+        User mood (happy) vs Song mood (happy). Match: 1.00
+        User energy: User (0.8) vs Song energy (0.58). Match: 0.78
+        User likes acoustics (True) vs Song acoustics (0.45). Match: 0.45
 ```
 
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or demo video link here -->
