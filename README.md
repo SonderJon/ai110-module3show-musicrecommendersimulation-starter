@@ -29,6 +29,12 @@ Some prompts to answer:
 
 You can include a simple diagram or bullet list if helpful.
 
+Streaming platofrms like Spotify analyze song metadata (title, artists, genre, etc) and audio data.
+Then, using the song analytics and user history, songs are recommended that fit a user's preferences or that users with similar preferences have enjoyed
+This system will prioritize genre, mood, energy, and acousrticness for recommendations
+score = (genre_match * w1) + (mood_match * w2) + (energy_closeness * w3) + (acoustic_fit * w4)
+The above score can be modified with weights to prioritize different attributes
+
 ---
 
 ## Getting Started
