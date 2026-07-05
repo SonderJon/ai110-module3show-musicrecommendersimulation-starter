@@ -29,12 +29,28 @@ Some prompts to answer:
 
 You can include a simple diagram or bullet list if helpful.
 
+### Phase 1
 Streaming platofrms like Spotify analyze song metadata (title, artists, genre, etc) and audio data.
 Then, using the song analytics and user history, songs are recommended that fit a user's preferences or that users with similar preferences have enjoyed
 This system will prioritize genre, mood, energy, and acousrticness for recommendations
 score = (genre_match * w1) + (mood_match * w2) + (energy_closeness * w3) + (acoustic_fit * w4)
 The above score can be modified with weights to prioritize different attributes
 
+### Phase 2
+User profile:<br>
+    favorite_genre: str<br>
+    favorite_mood: str<br>
+    target_energy: float<br>
+    likes_acoustic: bool<br>
+Finalized scoring: (0.35 × genre_match) + (0.25 × mood_match) + (0.25 × energy_match) + (0.15 × acoustic_match)
+Genre match has the most weight, followed by mood and energy, then accoustics being the least important.
+If likes_acoustic is True, acoustic_match = acousticness.
+Else, acoustic_match = 1 - acousticness (the inverse)
+This system places more weight on genre, biasing towards users who prioritize genre rather than mood or energy, for example
+Planned flow:<br>
+    Input: user preferences
+    Process: parse input, loop through songs with scoring system, rank scored songs
+    Output: top recommendations
 ---
 
 ## Getting Started
